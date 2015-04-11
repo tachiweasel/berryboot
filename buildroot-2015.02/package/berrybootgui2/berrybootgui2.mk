@@ -23,6 +23,7 @@ define BERRYBOOTGUI2_INSTALL_TARGET_CMDS
         $(INSTALL) -m 0755 package/berrybootgui2/init $(TARGET_DIR)/init
         $(INSTALL) -m 0755 package/berrybootgui2/chroot_image $(TARGET_DIR)/usr/sbin
 	$(INSTALL) -m 0755 package/berrybootgui2/hotplug $(TARGET_DIR)/sbin/hotplug
+	$(INSTALL) -m 0755 package/berrybootgui2/bootjoy $(TARGET_DIR)/usr/bin/bootjoy
 endef
 
 $(eval $(generic-package))

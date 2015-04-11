@@ -30,6 +30,14 @@ if grep -q vncinstall /proc/cmdline; then
 	echo
 fi
 
+/usr/bin/bootjoy /dev/input/event0 /dev/uinput &
+/usr/bin/bootjoy /dev/input/event1 /dev/uinput &
+/usr/bin/bootjoy /dev/input/event2 /dev/uinput &
+/usr/bin/bootjoy /dev/input/event3 /dev/uinput &
+/usr/bin/bootjoy /dev/input/event4 /dev/uinput &
+/usr/bin/bootjoy /dev/input/event5 /dev/uinput &
+/usr/bin/bootjoy /dev/input/event6 /dev/uinput &
+
 # Show GUI, it will write the OS choosen to /tmp/answer
 /usr/bin/BerrybootGUI -qws 2>/tmp/debug 
 
